@@ -107,7 +107,7 @@ function analyseFinances(finances) {
   console.log("------------------");
   console.log("Total Months: " + totalMonths);
   console.log("Total: $" + totalProfitLosses);
-  console.log("Average Change: $" + averageChange);
+  console.log("Average Change: $" + averageChange.toFixed(2));
 
 }
 
