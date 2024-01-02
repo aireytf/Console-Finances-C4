@@ -13,8 +13,8 @@ The starter code for this challenge provided me with a financial dataset compose
 - The net total amount of Profit/Losses over the entire period.
 
 - The average of the changes in Profit/Losses over the entire period.
-- Track the total change in Profit/Losses from month to month and then find the average.
-- (Total/(Number of months - 1))
+  Track the total change in Profit/Losses from month to month and then find the average.
+  (Total/(Number of months - 1))
 
 - The greatest increase in Profit/Losses (date and difference in the amounts) over the entire period.
 
