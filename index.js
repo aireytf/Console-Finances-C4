@@ -92,13 +92,25 @@ function analyseFinances(finances) {
   var totalMonths = finances.length;
   var totalProfitLosses = finances.reduce((total, entry) => total + entry[1], 0);
 
+  // Calculate the changes in Profit/Losses
+  var changes = [];
+  for (var i = 1; i < finances.length; i++) {
+      var change = finances[i][1] - finances[i - 1][1];
+      changes.push(change);
+  }
+
+  // Calculate the average change
+  var averageChange = changes.reduce((sum, change) => sum + change, 0) / (totalMonths - 1);
+
   // Print the analysis to the console
   console.log("Financial Analysis");
   console.log("------------------");
   console.log("Total Months: " + totalMonths);
   console.log("Total: $" + totalProfitLosses);
+  console.log("Average Change: $" + averageChange);
 
 }
 
 // Call the analysis function
 analyseFinances(finances);
+
