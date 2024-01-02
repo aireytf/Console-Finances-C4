@@ -90,11 +90,13 @@ var finances = [
 // Financial analysis function
 function analyseFinances(finances) {
   var totalMonths = finances.length;
+  var totalProfitLosses = finances.reduce((total, entry) => total + entry[1], 0);
 
-// Print the analysis to the console
-console.log("Financial Analysis");
-console.log("------------------");
-console.log("Total Months: " + totalMonths);
+  // Print the analysis to the console
+  console.log("Financial Analysis");
+  console.log("------------------");
+  console.log("Total Months: " + totalMonths);
+  console.log("Total: $" + totalProfitLosses);
 
 }
 
