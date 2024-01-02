@@ -102,12 +102,25 @@ function analyseFinances(finances) {
   // Calculate the average change
   var averageChange = changes.reduce((sum, change) => sum + change, 0) / (totalMonths - 1);
 
+  // Find the greatest increase and decrease
+  var greatestIncrease = Math.max(...changes);
+  var greatestDecrease = Math.min(...changes);
+
+  var greatestIncreaseIndex = changes.indexOf(greatestIncrease);
+  var greatestDecreaseIndex = changes.indexOf(greatestDecrease);
+
+  var greatestIncreaseMonth = finances[greatestIncreaseIndex + 1][0];
+  var greatestDecreaseMonth = finances[greatestDecreaseIndex + 1][0];
+
+
   // Print the analysis to the console
   console.log("Financial Analysis");
   console.log("------------------");
   console.log("Total Months: " + totalMonths);
   console.log("Total: $" + totalProfitLosses);
   console.log("Average Change: $" + averageChange.toFixed(2));
+  console.log("Greatest Increase in Profits/Losses: " + greatestIncreaseMonth + " ($" + greatestIncrease + ")");
+  console.log("Greatest Decrease in Profits/Losses: " + greatestDecreaseMonth + " ($" + greatestDecrease + ")");
 
 }
 
