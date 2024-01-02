@@ -86,3 +86,17 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// Financial analysis function
+function analyseFinances(finances) {
+  var totalMonths = finances.length;
+
+// Print the analysis to the console
+console.log("Financial Analysis");
+console.log("------------------");
+console.log("Total Months: " + totalMonths);
+
+}
+
+// Call the analysis function
+analyseFinances(finances);
