@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository serves to showcase my work in completing the Module 1 Challenge of my edX Bootcamp.
+This repository serves to showcase my work in completing the Module 4 Challenge of my edX Bootcamp.
 
 The challenge was a real-world situation, tasking me with writing JavaScript code to analyse the financial records of a company. 
 
@@ -13,7 +13,7 @@ The starter code for this challenge provided me with a financial dataset compose
 - The net total amount of Profit/Losses over the entire period.
 
 - The average of the changes in Profit/Losses over the entire period.
-- You will need to track what the total change in Profit/Losses are from month to month and then find the average.
+- Track the total change in Profit/Losses from month to month and then find the average.
 - (Total/(Number of months - 1))
 
 - The greatest increase in Profit/Losses (date and difference in the amounts) over the entire period.
@@ -32,7 +32,7 @@ My final code was to print the anlaysis to the console, as per the following Dem
 
 ## Usage
 
-To view my work on this challenge, you can review the sections of this repository, and my delpoyed site which is at ...
+To view my work on this challenge, you can review the sections of this repository, and my delpoyed site which is at https://aireytf.github.io/Console-Finances-C4/ 
 
 To review the calculations resulting from my JavaScript code, on the deployed site referenced above, open the Chrome DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the webpage in the browser. There you can navigate to the console header and view the calculations. 
 
